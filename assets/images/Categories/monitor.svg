@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60.6" height="44.288" viewBox="0 0 60.6 44.288">
+  <g id="monitor" transform="translate(-23.06 -35.58)">
+    <path id="Path_2128" data-name="Path 2128" d="M53.79,85.78H68.9v6.565H53.79Z" transform="translate(-7.987 -13.047)" fill="#2f4859"/>
+    <path id="Path_2129" data-name="Path 2129" d="M43.53,92.61h30.3v2.08H43.53Z" transform="translate(-5.32 -14.822)" fill="#3a556a"/>
+    <rect id="Rectangle_2232" data-name="Rectangle 2232" width="60.6" height="37.664" rx="1.38" transform="translate(23.06 35.58)" fill="#3a556a"/>
+    <path id="Path_2130" data-name="Path 2130" d="M25.91,38.44H82.291V71.878H25.91Z" transform="translate(-0.741 -0.743)" fill="#029bc5"/>
+    <g id="Group_234" data-name="Group 234" transform="translate(32.977 37.697)" opacity="0.5">
+      <path id="Path_2131" data-name="Path 2131" d="M62.889,38.44,38.806,71.87H36.46L60.543,38.44Z" transform="translate(-36.46 -38.44)" fill="#e1e6e9"/>
+      <path id="Path_2132" data-name="Path 2132" d="M72.7,38.44,48.606,71.87H42.9L66.983,38.44Z" transform="translate(-38.134 -38.44)" fill="#e1e6e9"/>
+    </g>
+  </g>
+</svg>

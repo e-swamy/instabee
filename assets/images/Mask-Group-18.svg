@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="_2" data-name="2" width="100" height="100" rx="50" transform="translate(370 674)" fill="#ffb846"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_18" data-name="Mask Group 18" transform="translate(-370 -674)" clip-path="url(#clip-path)">
+    <g id="televisions" transform="translate(389.8 690.43)">
+      <path id="Path_2219" data-name="Path 2219" d="M51.46,81.825l.643,3.855H39.894l.643-3.855L46,79.255Z" transform="translate(-15.798 -28.015)" fill="#fff9cf"/>
+      <path id="Path_2220" data-name="Path 2220" d="M51.238,75.443l.643,3.855H40.957l.643-3.855,4.819-2.57Z" transform="translate(-16.219 -25.487)" fill="#fff296"/>
+      <path id="Path_2221" data-name="Path 2221" d="M90.821,10.106V50.587H86.966l-7.711-20.24,7.711-20.24Z" transform="translate(-31.385 -0.632)" fill="#748993"/>
+      <path id="Path_2222" data-name="Path 2222" d="M56.213,10.106H1.6V50.587H56.213V46.732L53.128,30.347l3.084-16.385Z" transform="translate(-0.632 -0.632)" fill="#a2b1b7"/>
+      <path id="Path_2223" data-name="Path 2223" d="M83.6,16.489V49.26H79.74l-9-15.137,9-17.633Z" transform="translate(-28.015 -3.16)" fill="#414d53"/>
+      <rect id="Rectangle_2317" data-name="Rectangle 2317" width="46.906" height="32.77" transform="translate(4.819 13.33)" fill="#57676e"/>
+      <path id="Path_2224" data-name="Path 2224" d="M59.436,8.511H.964A.964.964,0,0,0,0,9.474V49.955a.964.964,0,0,0,.964.964H24.243L23.279,56.7H9.638a.964.964,0,0,0,0,1.928H50.762a.964.964,0,0,0,0-1.928H37.121l-.964-5.783H59.436a.964.964,0,0,0,.964-.964V9.474A.964.964,0,0,0,59.436,8.511ZM35.167,56.7H25.233l.964-5.783H34.2Zm23.306-7.711H1.928V10.438H58.472Z"/>
+      <path id="Path_2225" data-name="Path 2225" d="M7.347,49.591H58.108a.964.964,0,0,0,.964-.964V15.858a.964.964,0,0,0-.964-.964H7.347a.964.964,0,0,0-.964.964V30.315a.964.964,0,0,0,1.928,0V16.821H57.145V47.664H8.311V34.17a.964.964,0,0,0-1.928,0V48.628A.964.964,0,0,0,7.347,49.591Z" transform="translate(-2.528 -2.528)"/>
+    </g>
+  </g>
+</svg>

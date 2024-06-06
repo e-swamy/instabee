@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBee</title>
+
+    <!-- bootstrap5 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css'
+        integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=='
+        crossorigin='anonymous' />
+
+    <!-- app style -->
+    <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-navbar py-2 fixed-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <a class="col-xl-2 col-lg-3 col-md-3 col-3 navbar-brand" href="home.html">
+                        <img src="assets/images/logo.svg" width="180" alt="">
+                    </a>
+                    <div class="col-xl-10 col-lg-9 col-md-9 col-9 d-flex flex-row align-items-center">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center">
+                            <li class="nav-item d-xl-inline-block d-none">
+                                <form role="search" class="search">
+                                    <div class="position-relative">
+                                        <input class="form-control ps-5 border-0 bg-transparent me-2" type="search"
+                                            placeholder="Search">
+                                        <i
+                                            class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="wishlist.html">
+                                    <i class="fs-5 bi bi-heart"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fs-5 bi bi-cart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="position-relative">
+                                        <i class="fs-5 bi bi-bell"></i>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle rounded-circle bg-success p-1"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#"
+                                    class="text-dark d-flex align-items-center text-decoration-none dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="38" height="38"
+                                        class="rounded-circle">
+                                    <div class="content d-xl-inline-block d-none ms-2" style="width: 120px">
+                                        <div class="theme_fw_600 mb-0 text-truncate">Austin Robertson</div>
+                                        <div class="small text-truncate">Marketing Administrator</div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="sub-navbar py-0">
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap align-items-center">
+                    <ul class="nav me-auto py-1">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Shop ByCategory</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Deals Today</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Electronics</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Applications</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Clothings</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Home & Furniture</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Recently Viewed</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="instabee-app-wrapper">
+        <section class="order-track-details py-3">
+            <div class="container">
+                <div class="card card-body shadow-sm border-0 rounded-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="card-title mb-0">Track Order</h6>
+                        <div class="dropdown">
+                            <button class="btn theme_btn1 theme_btn1_animation_remove dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                All
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled order-track-details-list">
+                        <li>
+                            <div class="card card-body rounded-4 border-light">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="card-title theme_fw_600 mb-0">Deliver on : Sunday, March 14, 2020 11:21
+                                    </h6>
+                                    <div class="position-relative">
+                                        <span
+                                            class="me-5 position-absolute top-50 start-0 translate-middle p-1 bg-danger rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                        <small class="ms-2">Arrived</small>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row row-cols-xl-6 row-cols-lg-6 row-cols-md-6 row-cols-sm-3 row-cols-2 gy-4 align-items-center">
+                                    <div class="col text-lg-center">
+                                        <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                            width="60" height="60" class="rounded-circle" alt="" />
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Order ID</h6>
+                                        <div class="description fw-normal opacity-50">3334567191</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Service Type</h6>
+                                        <div class="description fw-normal opacity-50">Export</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Destination</h6>
+                                        <div class="description fw-normal opacity-50">Mumbai</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Status</h6>
+                                        <div class="description fw-normal opacity-50">Shipped</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Exp. Delivery by</h6>
+                                        <div class="description fw-normal opacity-50">14 March 2020</div>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-12">
+                                        <div class="delivery-progress">
+                                            <ul class="mt-4 m-0 p-0 step d-flex flex-nowrap">
+                                                <li class="step-item active">
+                                                    <a href="#!"><small>Prepared</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!"><small>Booking</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!"> <small>Arrived</small></a>
+                                                </li>
+                                                <li class="step-item">
+                                                    <a href="#!">
+                                                        <small>In Transit</small></a>
+                                                </li>
+                                                <li class="step-item">
+                                                    <a href="#!"><small>Out For Delivery</small></a>
+                                                </li>
+                                                <li class="step-item ">
+                                                    <a href="#!">
+                                                        <small>Delivered</small></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless">
+                                                <thead class="bg-light">
+                                                    <tr>
+                                                        <th scope="col" class="rounded-start">Date</th>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Location</th>
+                                                        <th scope="col" class="rounded-end">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="4" style="padding: 0px;height:0px">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12 March 2020</td>
+                                                        <td>12:00 AM</td>
+                                                        <td>Hyderabad Hub</td>
+                                                        <td>Received at Hyderabad Hub</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12 March 2020</td>
+                                                        <td>12:00 AM</td>
+                                                        <td>Hyderabad Hub</td>
+                                                        <td>Processed and Forwaded to Mumbai Facility</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card card-body rounded-4 border-light">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="card-title theme_fw_600 mb-0">Deliver on : Sunday, March 14, 2020 11:21
+                                    </h6>
+                                    <div class="position-relative">
+                                        <span
+                                            class="me-5 position-absolute top-50 start-0 translate-middle p-1 bg-success rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                        <small class="ms-2">Delivered</small>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row row-cols-xl-6 row-cols-lg-6 row-cols-md-6 row-cols-sm-3 row-cols-2 gy-4 align-items-center">
+                                    <div class="col text-lg-center">
+                                        <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                            width="60" height="60" class="rounded-circle" alt="" />
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Order ID</h6>
+                                        <div class="description fw-normal opacity-50">3334567191</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Service Type</h6>
+                                        <div class="description fw-normal opacity-50">Export</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Destination</h6>
+                                        <div class="description fw-normal opacity-50">Mumbai</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Status</h6>
+                                        <div class="description fw-normal opacity-50">Shipped</div>
+                                    </div>
+                                    <div class="col text-lg-center">
+                                        <h6 class="title mb-0">Exp. Delivery by</h6>
+                                        <div class="description fw-normal opacity-50">14 March 2020</div>
+                                    </div>
+                                </div>
+                                <div class="row gy-5">
+                                    <div class="col-12">
+                                        <div class="delivery-progress">
+                                            <ul class="mt-4 m-0 p-0 step d-flex flex-nowrap">
+                                                <li class="step-item active">
+                                                    <a href="#!"><small>Prepared</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!"><small>Booking</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!"> <small>Arrived</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!">
+                                                        <small>In Transit</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!"><small>Out For Delivery</small></a>
+                                                </li>
+                                                <li class="step-item active">
+                                                    <a href="#!">
+                                                        <small>Delivered</small></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'
+        integrity='sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=='
+        crossorigin='anonymous'></script>
+    <!-- bootstrap5 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js'
+        integrity='sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=='
+        crossorigin='anonymous'></script>
+
+</body>
+
+</html>

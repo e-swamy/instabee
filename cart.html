@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBee</title>
+
+    <!-- bootstrap5 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css'
+        integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=='
+        crossorigin='anonymous' />
+
+    <!-- app style -->
+    <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-navbar py-2 fixed-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <a class="col-xl-2 col-lg-3 col-md-3 col-3 navbar-brand" href="home.html">
+                        <img src="assets/images/logo.svg" width="180" alt="">
+                    </a>
+                    <div class="col-xl-10 col-lg-9 col-md-9 col-9 d-flex flex-row align-items-center">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center">
+                            <li class="nav-item d-xl-inline-block d-none">
+                                <form role="search" class="search">
+                                    <div class="position-relative">
+                                        <input class="form-control ps-5 border-0 bg-transparent me-2" type="search"
+                                            placeholder="Search">
+                                        <i
+                                            class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="wishlist.html">
+                                    <i class="fs-5 bi bi-heart"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fs-5 bi bi-cart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="position-relative">
+                                        <i class="fs-5 bi bi-bell"></i>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle rounded-circle bg-success p-1"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#"
+                                    class="text-dark d-flex align-items-center text-decoration-none dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="38" height="38"
+                                        class="rounded-circle">
+                                    <div class="content d-xl-inline-block d-none ms-2" style="width: 120px">
+                                        <div class="theme_fw_600 mb-0 text-truncate">Austin Robertson</div>
+                                        <div class="small text-truncate">Marketing Administrator</div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="sub-navbar py-0">
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap align-items-center">
+                    <ul class="nav me-auto py-1">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Shop ByCategory</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Deals Today</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Electronics</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Applications</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Clothings</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Home & Furniture</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Recently Viewed</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="instabee-app-wrapper">
+        <section class="cart py-3">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="card card-body border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                            <h6 class="card-title mb-3">Cart</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="card card-body border-0 rounded-2">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <figure class="figure d-flex align-items-center mb-0">
+                                                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                                    class="figure-img me-3" alt="..." />
+                                                <figcaption class="figure-caption">
+                                                    <h6 class="theme_fw_500 theme_color10 mb-0">Nike Shoes
+                                                    </h6>
+                                                    <div class="descrption">
+                                                        Men Block Casual Shoe Wear
+                                                    </div>
+                                                    <div class="size">Size: 09</div>
+                                                    <div class="saller">Saller: Company Name</div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div
+                                                class="ms-md-0 ms-5 ps-md-0 ps-5 inputs d-flex flex-row justify-content-md-center align-items-center h-100 mt-2">
+                                                <button class="btn btn-link text-dark text-decoration-none p-0"><i
+                                                        class="bi bi-dash-circle-fill fs-4"></i></button>
+                                                <input class="m-1 text-center form-control rounded w-50" type="text"
+                                                    id="first" maxlength="4" />
+                                                <button class="btn tbn-link text-dark text-decoration-none p-0"><i
+                                                        class="bi bi-plus-circle-fill fs-4"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div
+                                                class="ms-md-0 ms-5 ps-md-0 ps-5 d-flex h-100 align-items-md-end flex-column justify-content-between">
+                                                <div class="price">Rs. 999</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card card-body border-0 rounded-2">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <figure class="figure d-flex align-items-center mb-0">
+                                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                                                    class="figure-img me-3" alt="..." />
+                                                <figcaption class="figure-caption">
+                                                    <h6 class="theme_fw_500 theme_color10 mb-0">Nike Shoes
+                                                    </h6>
+                                                    <div class="descrption">
+                                                        Men Block Casual Shoe Wear
+                                                    </div>
+                                                    <div class="size">Size: 09</div>
+                                                    <div class="saller">Saller: Company Name</div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div
+                                                class="ms-md-0 ms-5 ps-md-0 ps-5 inputs d-flex flex-row justify-content-md-center align-items-center h-100 mt-2">
+                                                <button class="btn btn-link text-dark text-decoration-none p-0"><i
+                                                        class="bi bi-dash-circle-fill fs-4"></i></button>
+                                                <input class="m-1 text-center form-control rounded w-50" type="text"
+                                                    id="first" maxlength="4" />
+                                                <button class="btn tbn-link text-dark text-decoration-none p-0"><i
+                                                        class="bi bi-plus-circle-fill fs-4"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div
+                                                class="ms-md-0 ms-5 ps-md-0 ps-5 d-flex h-100 align-items-md-end flex-column justify-content-between">
+                                                <div class="price">Rs. 999</div>
+                                                <small class="withlist">Move to Withlist</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card card-body border-0 rounded-2">
+                                    <div class="row gy-3">
+                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                            <figure class="figure d-flex align-items-center mb-0">
+                                                <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                                    class="figure-img me-3" alt="..." />
+                                                <figcaption class="figure-caption">
+                                                    <h6 class="theme_fw_500 theme_color10 mb-0">Nike Shoes
+                                                    </h6>
+                                                    <div class="descrption">
+                                                        Men Block Casual Shoe Wear
+                                                    </div>
+                                                    <div class="size">Size: 09</div>
+                                                    <div class="saller">Saller: Company Name</div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div
+                                                class="ms-md-0 ms-5 ps-md-0 ps-5 inputs d-flex flex-row justify-content-md-center align-items-center h-100 mt-2">
+                                                <button class="btn btn-link text-dark text-decoration-none p-0"><i
+                                                        class="bi bi-dash-circle-fill fs-4"></i></button>
+                                                <input class="m-1 text-center form-control rounded w-50" type="text"
+                                                    id="first" maxlength="4" />
+                                                <button class="btn tbn-link text-dark text-decoration-none p-0"><i
+                                                        class="bi bi-plus-circle-fill fs-4"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-3">
+                                            <div
+                                                class="ms-md-0 ms-5 ps-md-0 ps-5 d-flex h-100 align-items-md-end flex-column justify-content-between">
+                                                <div class="price">Rs. 999</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                            <div class="card-body">
+                                <h6 class="card-title mb-3">Order Details</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-sm">
+                                        <tbody>
+                                            <tr>
+                                                <td>Cart Total</td>
+                                                <td>-</td>
+                                                <td>Rs 6854</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Discount</td>
+                                                <td>5%</td>
+                                                <td>Rs - 34.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shipping</td>
+                                                <td>-</td>
+                                                <td>Rs 10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent py-3">
+                                <div class="row mb-4">
+                                    <div class="col-6 fw-bold">Total Amount</div>
+                                    <div class="col-6 fw-bold">Rs 6519.5</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 d-grid">
+                                        <a href="product-details.html" class="btn cancel">Cancel</a>
+                                    </div>
+                                    <div class="col-6 d-grid">
+                                        <a href="shipping-address.html" class="btn theme_btn1">Procced</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h5 class="mb-3">Related Products</h5>
+                    </div>
+                </div>
+                <div
+                    class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 gy-4 related-products">
+                    <div class="col">
+                        <div class="related-products-details">
+                            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                class="img-fluid rounded-4" alt="" />
+                            <div class="content mt-3">
+                                <h6 class="title mb-0">Fila Mens</h6>
+                                <div class="price">Rs 999</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="related-products-details">
+                            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                                class="img-fluid rounded-4" alt="" />
+                            <div class="content mt-3">
+                                <h6 class="title mb-0">Fila Mens</h6>
+                                <div class="price">Rs 999</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="related-products-details">
+                            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                                class="img-fluid rounded-4" alt="" />
+                            <div class="content mt-3">
+                                <h6 class="title mb-0">Fila Mens</h6>
+                                <div class="price">Rs 999</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="related-products-details">
+                            <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                                class="img-fluid rounded-4" alt="" />
+                            <div class="content mt-3">
+                                <h6 class="title mb-0">Fila Mens</h6>
+                                <div class="price">Rs 999</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="related-products-details">
+                            <img src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                class="img-fluid rounded-4" alt="" />
+                            <div class="content mt-3">
+                                <h6 class="title mb-0">Fila Mens</h6>
+                                <div class="price">Rs 999</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn theme_btn1 theme_btn1_animation_remove h-100 d-flex align-items-end px-4">
+                            <small class="title mb-0">More</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'
+        integrity='sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=='
+        crossorigin='anonymous'></script>
+    <!-- bootstrap5 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js'
+        integrity='sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=='
+        crossorigin='anonymous'></script>
+
+</body>
+
+</html>

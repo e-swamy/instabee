@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60.6" height="50.399" viewBox="0 0 60.6 50.399">
+  <g id="camera_1_" data-name="camera (1)" transform="translate(-26.54 -30.18)">
+    <g id="Group_229" data-name="Group 229" transform="translate(34.274 30.18)">
+      <path id="Path_2078" data-name="Path 2078" d="M40.25,40.75H36.642a.542.542,0,0,0-.542.542v1.8h4.692v-1.8A.542.542,0,0,0,40.25,40.75Z" transform="translate(-36.1 -32.199)" fill="#2f4859"/>
+      <path id="Path_2079" data-name="Path 2079" d="M90.25,40.75H86.642a.542.542,0,0,0-.542.542v1.8h4.692v-1.8A.542.542,0,0,0,90.25,40.75Z" transform="translate(-45.651 -32.199)" fill="#2f4859"/>
+      <path id="Path_2080" data-name="Path 2080" d="M72.987,31.968a2.265,2.265,0,0,0-2.209-1.788H50.165a2.265,2.265,0,0,0-2.208,1.788l-2.427,11.4H75.462Z" transform="translate(-37.901 -30.18)" fill="#2f4859"/>
+    </g>
+    <rect id="Rectangle_2231" data-name="Rectangle 2231" width="60.6" height="40.424" rx="5.34" transform="translate(26.54 40.155)" fill="#3a556a"/>
+    <circle id="Ellipse_109" data-name="Ellipse 109" cx="14.384" cy="14.384" r="14.384" transform="translate(42.461 45.979)" fill="#2f4859"/>
+    <circle id="Ellipse_110" data-name="Ellipse 110" cx="11.188" cy="11.188" r="11.188" transform="translate(45.656 49.175)" fill="#3e6b82"/>
+    <circle id="Ellipse_111" data-name="Ellipse 111" cx="6.739" cy="6.739" r="6.739" transform="translate(50.105 53.624)" fill="#029bc5"/>
+    <path id="Path_2081" data-name="Path 2081" d="M54.07,34.23H70.144v4.3H54.07Z" transform="translate(-5.259 -0.774)" fill="#e1e6e9"/>
+    <circle id="Ellipse_112" data-name="Ellipse 112" cx="2.241" cy="2.241" r="2.241" transform="translate(50.105 53.632)" fill="#e1e6e9" opacity="0.5"/>
+  </g>
+</svg>

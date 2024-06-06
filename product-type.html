@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBee</title>
+
+    <!-- bootstrap5 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css'
+        integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=='
+        crossorigin='anonymous' />
+    <!-- slick -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css'
+        integrity='sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=='
+        crossorigin='anonymous' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css'
+        integrity='sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=='
+        crossorigin='anonymous' />
+    <!-- app style -->
+    <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-navbar py-2 fixed-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <a class="col-xl-2 col-lg-3 col-md-3 col-3 navbar-brand" href="home.html">
+                        <img src="assets/images/logo.svg" width="180" alt="">
+                    </a>
+                    <div class="col-xl-10 col-lg-9 col-md-9 col-9 d-flex flex-row align-items-center">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center">
+                            <li class="nav-item d-xl-inline-block d-none">
+                                <form role="search" class="search">
+                                    <div class="position-relative">
+                                        <input class="form-control ps-5 border-0 bg-transparent me-2" type="search"
+                                            placeholder="Search">
+                                        <i
+                                            class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="wishlist.html">
+                                    <i class="fs-5 bi bi-heart"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fs-5 bi bi-cart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="position-relative">
+                                        <i class="fs-5 bi bi-bell"></i>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle rounded-circle bg-success p-1"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#"
+                                    class="text-dark d-flex align-items-center text-decoration-none dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://github.com/mdo.png" alt="mdo" width="38" height="38"
+                                        class="rounded-circle">
+                                    <div class="content d-xl-inline-block d-none ms-2" style="width: 120px">
+                                        <div class="theme_fw_600 mb-0 text-truncate">Austin Robertson</div>
+                                        <div class="small text-truncate">Marketing Administrator</div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end text-small shadow">
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="sub-navbar py-0">
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap align-items-center">
+                    <ul class="nav me-auto py-1">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Shop ByCategory</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Deals Today</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Electronics</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Applications</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Clothings</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Home & Furniture</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Recently Viewed</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="instabee-app-wrapper">
+
+        <section class="products py-3">
+            <div class="container">
+                <div class="row gy-4 mb-3">
+                    <div class="col-xl-6 col-lg-6 col-md-12">
+                        <ul class="breadcrumb-list list-inline mb-0">
+                            <li class="list-inline-item"><a href="#">Home </a></li>
+                            <li class="list-inline-item"><a href="#">Fashion </a></li>
+                            <li class="list-inline-item"><a href="#">Footwear </a></li>
+                            <li class="list-inline-item active">Shoes</li>
+                        </ul>
+                        <h4 class="mb-0">Your With List</h4>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 gy-5">
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam minima quiaquidem hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Minima sequi incidunt ipsum sapiente enim aspernatur quos
+                                    voluptatibus aliquid animi fugit amet reiciendis impedit,
+                                    maxime dicta molestiae quae? Voluptatum, ipsam fugit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1516478177764-9fe5bd7e9717?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1494496195158-c3becb4f2475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="img-fluid" alt="" />
+                            </div>
+                            <div class="product-content text-center">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="descrption">
+                                    Iure totam quo fuga minima quiaquidem cum ab rem id! Hic.
+                                </div>
+                                <div class="price">Rs. 1800 <s>rs.4499</s></div>
+                                <div class="offerprice text-success">Offer Price: Rs 1800</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="paginations col-12 d-flex justify-content-end my-4">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'
+        integrity='sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=='
+        crossorigin='anonymous'></script>
+    <!-- bootstrap5 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js'
+        integrity='sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=='
+        crossorigin='anonymous'></script>
+    <!-- slick -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'
+        integrity='sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=='
+        crossorigin='anonymous'></script>
+    <script>
+        $('.hero-slick-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+        $('.category-slick-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
